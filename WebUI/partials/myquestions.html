@@ -1,0 +1,65 @@
+<section id="AddQuestionSection">
+
+<div class="container">
+    <h3 class="section-head">Questions</h3> 
+    <ol id="questionlistWrap" class="row">
+      <li class="que-list col-md-12" data-ng-repeat="question in questionList" data-ng-click="questionDetail(question)">
+          
+            <div class="question">
+             <div class="que_title_cls">
+                <a>{{question.title}}</a>
+             </div>
+             <div class="tags_list"><label class="mytag" data-ng-repeat="tag in question.tags" id="tag_list">{{tag}}</label></div>
+             <div class="que_description_cls">
+              <label>Description :</label> 
+              {{question.description}}
+             </div>
+            </div>
+
+        </li>
+    </ol>
+</div>
+
+<div class="container addquestion_cls">
+
+<form class="form-horizontal">
+    <div class="section-head">
+        <h3 class="form-heading">Add Question</h3>
+    </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Title</label>
+    <div class="col-sm-10">
+      <input name="title" class="form-control" placeholder= "Title" type="text" data-ng-model="newQuestion.title" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Description</label>
+    <div class="col-sm-10">
+      <textarea  class="form-control" placeholder= "Description" data-ng-model="newQuestion.description" required></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Tags</label>
+    <div class="col-sm-10">
+      <input name="tag" id="tag_id" class="form-control" data-ng-model="newtag" placeholder= "Enter Tag" type="text">
+      <button class="btn btn-success" data-ng-click="addTag()">Add Tag</button>
+      <label data-ng-repeat="tag in tagList" id="tag_list">{{tag.name}}</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button class="btn btn-success" data-ng-click="addQuestion()">Add</button>
+    </div>
+  </div>
+</form>
+
+   </div>
+
+
+</section>
+
+

@@ -1,0 +1,69 @@
+/** page css **/
+body{
+    background: #f3f7f8;
+}
+
+#header{
+    height: 50px;
+    background: #c4ced0;
+    color : #42565B;
+    text-align: center;
+    line-height: 50px;
+}
+#header h1{
+    margin:0px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.search_cls{
+    float: right;
+    margin-top: 10px;
+}
+
+#search_textfield{
+    width: 1024px;
+}
+
+.area input{
+    width: 200px;
+    margin-left:35px;
+}
+.area button{
+    width: 200px;
+}
+.area a{
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.area{
+    background-color: #dfdbd7;
+    margin-top: 50px;
+    width: 400px;
+    border-radius: 3px;
+}
+.area h3{
+    color: #006f6f;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 3px;
+
+}
+
+.area label{
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.area .heading{
+    background-color: #fff;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+
+#error_id{
+    color:#dc5757; 
+    font-style:italic;
+}

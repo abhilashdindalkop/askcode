@@ -1,0 +1,59 @@
+<section id="SignUpSection">
+ 
+<div class="container area">
+
+<form class="form-horizontal">
+    <div class="heading">
+        <h3 class="form-heading">Sign Up</h3>
+    </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input id="Name" class="form-control" name="name" placeholder= "Name" type="text" data-ng-model="newUser.name" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-10">
+      <input id="Address" class="form-control" name="address" placeholder= "Address" type="text" data-ng-model="newUser.address" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input id="inputEmail" class="form-control" name="email_id" placeholder="Email" type="email" data-ng-model="newUser.email_id" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Username</label>
+    <div class="col-sm-10">
+      <input id="inputUsername" class="form-control" name="username" placeholder="Username" type="text" data-ng-model="newUser.username" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input id="inputPassword" class="form-control" name="password" placeholder="Password" type="password" data-ng-model="newUser.password" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-10">
+      <button class="btn btn-info" data-ng-click="addUser()">Sign Up</button>
+      <label style="color:red; font-style:italic;">{{ error_text }}</label>
+    </div>
+  </div>
+
+</form>
+
+
+</div>
+
+
+</section>
+

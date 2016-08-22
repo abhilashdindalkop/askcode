@@ -1,0 +1,47 @@
+    <section>       
+
+
+                    <div class="container area">
+
+<form class="form-horizontal">
+    <div class="heading">
+        <h3 class="form-heading">Sign In</h3>
+    </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="username" data-ng-model="myuser.username" placeholder="Username" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" name="password" data-ng-model="myuser.password" placeholder="Password" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-10">
+      <div class="forgotpwd">
+          <a class="btn btn-link" href="#">Forgot my password</a>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-10">
+      <button class="btn btn-info" data-ng-click="authLogin()">Sign In</button>
+      <p id="error_id">{{ error_text }}</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-8 col-sm-10">
+      <a ui-sref="signUp">Create Account?</a>
+    </div>
+  </div>
+</form>
+
+</div>
+
+
+        </section>
+

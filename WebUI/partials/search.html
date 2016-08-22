@@ -1,0 +1,26 @@
+
+
+<div class="container">      
+	<div class="searchfield_div">
+         <input  type="text" id="search_textfield" data-ng-model="searchtext" placeholder="Search">
+         <button data-ng-click="searchText()" >Search</button>
+      </div>
+<div class="container">
+    <ol id="questionlistWrap" class="row">
+      <li class="que-list col-md-12" data-ng-repeat="question in questionList" data-ng-click="questionDetail(question)">
+          
+            <div class="question">
+             <div class="que_title_cls">
+                <a>{{question.title}}</a>
+             </div>
+             <div class="tags_list"><label class="mytag" data-ng-repeat="tag in question.tags" id="tag_list">{{tag}}</label></div>
+             <div class="que_description_cls">
+              <label>Description :</label> 
+              {{question.description}}
+             </div>
+            </div>
+
+        </li>
+    </ol>
+</div>
+</div>  

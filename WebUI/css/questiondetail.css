@@ -1,0 +1,11 @@
+.vote_grp{
+	font-weight: normal;
+	font-size: 25px;
+	float: right;
+	margin-right: 20px;
+}
+
+.vote_grp img{
+	width: 30px;
+	height: 25px;
+}
